@@ -1,0 +1,417 @@
+<!DOCTYPE html>
+<!--
+* CoreUI - Free Bootstrap Admin Template
+* @version v4.2.2
+* @link https://coreui.io
+* Copyright (c) 2022 creativeLabs Łukasz Holeczek
+* Licensed under MIT (https://coreui.io/license)
+-->
+<!-- Breadcrumb-->
+<html lang="en">
+  <head>
+    <base href="./">
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <meta name="description" content="CoreUI - Open Source Bootstrap Admin Template">
+    <meta name="author" content="Łukasz Holeczek">
+    <meta name="keyword" content="Bootstrap,Admin,Template,Open,Source,jQuery,CSS,HTML,RWD,Dashboard">
+    <title>Index of Economic Freedom Analysis</title>
+    <link rel="apple-touch-icon" sizes="57x57" href="assets/favicon/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="assets/favicon/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="assets/favicon/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="assets/favicon/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="assets/favicon/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="assets/favicon/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="assets/favicon/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="assets/favicon/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="assets/favicon/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192" href="assets/favicon/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="assets/favicon/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="assets/favicon/favicon-16x16.png">
+    <link rel="manifest" href="assets/favicon/manifest.json">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="assets/favicon/ms-icon-144x144.png">
+    <meta name="theme-color" content="#ffffff">
+    <!-- Vendors styles-->
+    <link rel="stylesheet" href="vendors/simplebar/css/simplebar.css">
+    <link rel="stylesheet" href="css/vendors/simplebar.css">
+    <!-- Main styles for this application-->
+    <link href="css/style.css" rel="stylesheet">
+    <!-- We use those styles to show code examples, you should remove them in your application.-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/prismjs@1.23.0/themes/prism.css">
+    <link href="css/examples.css" rel="stylesheet">
+    <!-- Global site tag (gtag.js) - Google Analytics-->
+    <script async="" src="https://www.googletagmanager.com/gtag/js?id=UA-118965717-3"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag('js', new Date());
+      // Shared ID
+      gtag('config', 'UA-118965717-3');
+      // Bootstrap ID
+      gtag('config', 'UA-118965717-5');
+    </script>
+    <link href="vendors/@coreui/chartjs/css/coreui-chartjs.css" rel="stylesheet">
+  </head>
+  <body>
+    <div class="sidebar sidebar-dark sidebar-fixed" id="sidebar">
+      <div class="sidebar-brand d-none d-md-flex">
+        <svg class="sidebar-brand-full" width="118" height="46" alt="CoreUI Logo">
+           <use xlink:href="assets/brand/coreui.svg#full"></use> 
+        </svg>
+        <svg class="sidebar-brand-narrow" width="46" height="46" alt="CoreUI Logo">
+          <use xlink:href="assets/brand/coreui.svg#signet"></use>
+        </svg>
+      </div>
+      <ul class="sidebar-nav" data-coreui="navigation" data-simplebar="">
+        <li class="nav-item"><a class="nav-link" href="index.html">
+            <svg class="nav-icon">
+              <use xlink:href="vendors/@coreui/icons/svg/free.svg#cil-speedometer"></use>
+            </svg> Dashboard<span class="badge badge-sm bg-info ms-auto">NEW</span></a></li>
+        <li class="nav-title">Theme</li>
+        <li class="nav-item"><a class="nav-link" href="colors.html">
+            <svg class="nav-icon">
+              <use xlink:href="vendors/@coreui/icons/svg/free.svg#cil-drop"></use>
+            </svg> Colors</a></li>
+        <!-- <li class="nav-item"><a class="nav-link" href="typography.html">
+            <svg class="nav-icon">
+              <use xlink:href="vendors/@coreui/icons/svg/free.svg#cil-pencil"></use>
+            </svg> Typography</a></li> -->
+        <li class="nav-title">Components</li>
+  
+       
+        <li class="nav-item"><a class="nav-link" href="story.html">
+            <svg class="nav-icon">
+              <use xlink:href="vendors/@coreui/icons/svg/free.svg#cil-chart-pie"></use>
+            </svg>Story</a></li>
+        
+     
+           
+      
+    </div>
+    <div class="wrapper d-flex flex-column min-vh-100 bg-light">
+      <header class="header header-sticky mb-4">
+        <div class="container-fluid">
+          <button class="header-toggler px-md-0 me-md-3" type="button" onclick="coreui.Sidebar.getInstance(document.querySelector('#sidebar')).toggle()">
+            <svg class="icon icon-lg">
+              <use xlink:href="vendors/@coreui/icons/svg/free.svg#cil-menu"></use>
+            </svg>
+          </button><a class="header-brand d-md-none" href="#">
+            <svg width="100" height="46" alt="CoreUI Logo">
+              <use xlink:href="assets/brand/coreui.svg#cib-reddit-alt"></use>
+            </svg></a>
+          <ul class="header-nav d-none d-md-flex">
+            <li class="nav-item"><a class="nav-link" href="#"><b>Index of Economic Freedom Analysis</b></a></li>
+            <!-- <li class="nav-item"><a class="nav-link" href="#">Users</a></li>
+            <li class="nav-item"><a class="nav-link" href="#">Settings</a></li> -->
+          </ul>
+          <ul class="header-nav ms-auto">
+            <!-- <li class="nav-item"><a class="nav-link" href="#">
+                <svg class="icon icon-lg">
+                  <use xlink:href="vendors/@coreui/icons/svg/free.svg#cil-bell"></use>
+                </svg></a></li> -->
+            <!-- <li class="nav-item"><a class="nav-link" href="#">
+                <svg class="icon icon-lg">
+                  <use xlink:href="vendors/@coreui/icons/svg/free.svg#cil-list-rich"></use>
+                </svg></a></li> -->
+            <!-- <li class="nav-item"><a class="nav-link" href="#">
+                <svg class="icon icon-lg">
+                  <use xlink:href="vendors/@coreui/icons/svg/free.svg#cil-envelope-open"></use>
+                </svg></a></li> -->
+          </ul>
+          <ul class="header-nav ms-3">
+            <li class="nav-item dropdown"><a class="nav-link py-0" data-coreui-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">
+                <div class="avatar avatar-md"><img class="avatar-img" src="assets/img/avatars/8.jpg" alt="user@email.com"></div>
+              </a>
+              <div class="dropdown-menu dropdown-menu-end pt-0">
+                <div class="dropdown-header bg-light py-2">
+                  <div class="fw-semibold">Account</div>
+                </div><a class="dropdown-item" href="#">
+                  <!-- <svg class="icon me-2">
+                    <use xlink:href="vendors/@coreui/icons/svg/free.svg#cil-bell"></use>
+                  </svg> Updates<span class="badge badge-sm bg-info ms-2">42</span></a><a class="dropdown-item" href="#"> -->
+                  <!-- <svg class="icon me-2">
+                    <use xlink:href="vendors/@coreui/icons/svg/free.svg#cil-envelope-open"></use>
+                  </svg> Messages<span class="badge badge-sm bg-success ms-2">42</span></a><a class="dropdown-item" href="#"> -->
+                  <!-- <svg class="icon me-2">
+                    <use xlink:href="vendors/@coreui/icons/svg/free.svg#cil-task"></use>
+                  </svg> Tasks<span class="badge badge-sm bg-danger ms-2">42</span></a><a class="dropdown-item" href="#"> -->
+                  <!-- <svg class="icon me-2">
+                    <use xlink:href="vendors/@coreui/icons/svg/free.svg#cil-comment-square"></use>
+                  </svg> Comments<span class="badge badge-sm bg-warning ms-2">42</span></a> -->
+                <!-- <div class="dropdown-header bg-light py-2">
+                  <div class="fw-semibold">Settings</div>
+                </div><a class="dropdown-item" href="#"> -->
+                  <!-- <svg class="icon me-2">
+                    <use xlink:href="vendors/@coreui/icons/svg/free.svg#cil-user"></use>
+                  </svg> Profile</a><a class="dropdown-item" href="#"> -->
+                  <!-- <svg class="icon me-2">
+                    <use xlink:href="vendors/@coreui/icons/svg/free.svg#cil-settings"></use>
+                  </svg> Settings</a><a class="dropdown-item" href="#"> -->
+                  <!-- <svg class="icon me-2">
+                    <use xlink:href="vendors/@coreui/icons/svg/free.svg#cil-credit-card"></use>
+                  </svg> Payments<span class="badge badge-sm bg-secondary ms-2">42</span></a><a class="dropdown-item" href="#"> -->
+                  <!-- <svg class="icon me-2">
+                    <use xlink:href="vendors/@coreui/icons/svg/free.svg#cil-file"></use>
+                  </svg> Projects<span class="badge badge-sm bg-primary ms-2">42</span></a> -->
+                <!-- <div class="dropdown-divider"></div><a class="dropdown-item" href="#"> -->
+                  <!-- <svg class="icon me-2">
+                    <use xlink:href="vendors/@coreui/icons/svg/free.svg#cil-lock-locked"></use>
+                  </svg> Lock Account</a><a class="dropdown-item" href="#"> -->
+                  <!-- <svg class="icon me-2">
+                    <use xlink:href="vendors/@coreui/icons/svg/free.svg#cil-account-logout"></use>
+                  </svg> Logout</a> -->
+              </div>
+            </li>
+          </ul>
+        </div>
+        <div class="header-divider"></div>
+        <div class="container-fluid">
+          <nav aria-label="breadcrumb">
+            <ol class="breadcrumb my-0 ms-2">
+              <li class="breadcrumb-item">
+                <!-- if breadcrumb is single--><span>Home</span>
+              </li>
+              <li class="breadcrumb-item active"><span>Dashboard</span></li>
+            </ol>
+          </nav>
+        </div>
+      </header>
+      <div class="body flex-grow-1 px-3">
+        <div class="container-lg">
+          <div class="row">
+            <div class="col-sm-6 col-lg-3">
+              <div class="card mb-4 text-white bg-primary">
+                <div class="card-body pb-0 d-flex justify-content-between align-items-start">
+                  <div>
+                    <div class="fs-4 fw-semibold" style="padding-bottom: 25px;">Singapore<span class="fs-4 fw-normal">(
+                      <svg class="icon">
+                        <use xlink:href="vendors/@coreui/icons/svg/flag.svg#cif-sg"></use>
+                      </svg>)</span></div> 
+                    <div>is ranked first in the index </div>
+                  </div>
+                  <div class="dropdown">
+                    <button class="btn btn-transparent text-white p-0" type="button" data-coreui-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                      <svg class="icon">
+                        <use xlink:href="vendors/@coreui/icons/svg/free.svg#cil-options"></use>
+                      </svg>
+                    </button>
+                    <div class="dropdown-menu dropdown-menu-end"><a class="dropdown-item" href="#">Action</a><a class="dropdown-item" href="#">Another action</a><a class="dropdown-item" href="#">Something else here</a></div>
+                  </div>
+                </div>
+                <!-- <div class="c-chart-wrapper mt-3 mx-3" style="height:70px;">
+                  <canvas class="chart" id="card-chart1" height="70"></canvas>
+                </div> -->
+              </div>
+            </div>
+            <!-- /.col-->
+            <div class="col-sm-6 col-lg-3">
+              <div class="card mb-4 text-white bg-info">
+                <div class="card-body pb-0 d-flex justify-content-between align-items-start">
+                  <div>
+                    <div class="fs-4 fw-semibold">2,355.1%<span class="fs-6 fw-normal">(
+                        <svg class="icon">
+                          <use xlink:href="vendors/@coreui/icons/svg/flag.svg#cif-ve"></use>
+                        </svg>)</span></div>
+                    <div>Venezuela has the highest inflation rate</div>
+                  </div>
+                  <div class="dropdown">
+                    <button class="btn btn-transparent text-white p-0" type="button" data-coreui-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                      <svg class="icon">
+                        <use xlink:href="vendors/@coreui/icons/svg/free.svg#cil-options"></use>
+                      </svg>
+                    </button>
+                    <div class="dropdown-menu dropdown-menu-end"><a class="dropdown-item" href="#">Action</a><a class="dropdown-item" href="#">Another action</a><a class="dropdown-item" href="#">Something else here</a></div>
+                  </div>
+                </div>
+                <!-- <div class="c-chart-wrapper mt-3 mx-3" style="height:70px;">
+                  <canvas class="chart" id="card-chart2" height="70"></canvas>
+                </div> -->
+              </div>
+            </div>
+            <!-- /.col-->
+            <div class="col-sm-6 col-lg-3">
+              <div class="card mb-4 text-white bg-warning">
+                <div class="card-body pb-0 d-flex justify-content-between align-items-start">
+                  <div>
+                    <div class="fs-4 fw-semibold">43.40 %<span class="fs-6 fw-normal">(
+                        <svg class="icon">
+                          <use xlink:href="vendors/@coreui/icons/svg/flag.svg#cif-gy"></use>
+                        </svg>)</span></div>
+                    <div>Guyana has the fastest growing gdp</div>
+                  </div>
+                  <div class="dropdown">
+                    <button class="btn btn-transparent text-white p-0" type="button" data-coreui-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                      <svg class="icon">
+                        <use xlink:href="vendors/@coreui/icons/svg/free.svg#cil-options"></use>
+                      </svg>
+                    </button>
+                    <div class="dropdown-menu dropdown-menu-end"><a class="dropdown-item" href="#">Action</a><a class="dropdown-item" href="#">Another action</a><a class="dropdown-item" href="#">Something else here</a></div>
+                  </div>
+                </div>
+                <!-- <div class="c-chart-wrapper mt-3" style="height:70px;">
+                  <canvas class="chart" id="card-chart3" height="70"></canvas>
+                </div> -->
+              </div>
+            </div>
+            <!-- /.col-->
+            <div class="col-sm-6 col-lg-3">
+              <div class="card mb-4 text-white bg-danger">
+                <div class="card-body pb-0 d-flex justify-content-between align-items-start">
+                  <div>
+                    <div class="fs-4 fw-semibold">28.70 %<span class="fs-6 fw-normal">(
+                        <svg class="icon">
+                          <use xlink:href="vendors/@coreui/icons/svg/flag.svg#cif-za"></use>
+                        </svg>)</span></div>
+                    <div> has the highest unemployment rate</div>
+                  </div>
+                  <div class="dropdown">
+                    <button class="btn btn-transparent text-white p-0" type="button" data-coreui-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                      <svg class="icon">
+                        <use xlink:href="vendors/@coreui/icons/svg/free.svg#cil-options"></use>
+                      </svg>
+                    </button>
+                    <div class="dropdown-menu dropdown-menu-end"><a class="dropdown-item" href="#">Action</a><a class="dropdown-item" href="#">Another action</a><a class="dropdown-item" href="#">Something else here</a></div>
+                  </div>
+                </div>
+                <!-- <div class="c-chart-wrapper mt-3 mx-3" style="height:70px;">
+                  <canvas class="chart" id="card-chart4" height="70"></canvas>
+                </div> -->
+              </div>
+            </div>
+            <!-- /.col-->
+          </div>
+          <!-- /.row-->
+          <div class="card mb-4">
+            <div class="card-body">
+              <div class="d-flex justify-content-between">
+              
+                </div>
+              </div>
+              <div class='tableauPlaceholder' id='viz1672313373233' style='position: relative'><noscript><a href='#'><img alt='Dashboard 1 ' src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;In&#47;Index_of_eco_freedom&#47;Dashboard1&#47;1_rss.png' style='border: none' /></a></noscript><object class='tableauViz'  style='display:none;'><param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' /> <param name='embed_code_version' value='3' /> <param name='site_root' value='' /><param name='name' value='Index_of_eco_freedom&#47;Dashboard1' /><param name='tabs' value='no' /><param name='toolbar' value='yes' /><param name='static_image' value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;In&#47;Index_of_eco_freedom&#47;Dashboard1&#47;1.png' /> <param name='animate_transition' value='yes' /><param name='display_static_image' value='yes' /><param name='display_spinner' value='yes' /><param name='display_overlay' value='yes' /><param name='display_count' value='yes' /><param name='language' value='en-US' /><param name='filter' value='publish=yes' /></object></div>                <script type='text/javascript'>                    var divElement = document.getElementById('viz1672313373233');                    var vizElement = divElement.getElementsByTagName('object')[0];                    if ( divElement.offsetWidth > 800 ) { vizElement.style.width='1000px';vizElement.style.height='827px';} else if ( divElement.offsetWidth > 500 ) { vizElement.style.width='1000px';vizElement.style.height='827px';} else { vizElement.style.width='100%';vizElement.style.height='977px';}                     var scriptElement = document.createElement('script');                    scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';                    vizElement.parentNode.insertBefore(scriptElement, vizElement);                </script>
+            </div>
+            
+          </div>
+          <!-- /.card.mb-4-->
+          <div class="row">
+            <div class="col-sm-6 col-lg-4">
+              <div class="card mb-4" style="--cui-card-cap-bg: #3b5998">
+                <div class="card-header position-relative d-flex justify-content-center align-items-center">
+                  <svg class="icon icon-3xl text-white my-4">
+                    <use xlink:href="vendors/@coreui/icons/svg/flag.svg#cif-in"></use>
+                  </svg>
+                  <div class="chart-wrapper position-absolute top-0 start-0 w-100 h-100">
+                    <canvas id="social-box-chart-1" height="90"></canvas>
+                  </div>
+                </div>
+                <div class="card-body row text-center">
+                  <div class="col">
+                    <div class="fs-5 fw-semibold">India's GDP  growth rate ?</div>
+                    <div class="fs-5 fw-semibold"></div>
+                  </div>
+                  <div class="vr"></div>
+                  <div class="col">
+                    <div class="text-uppercase text-medium-emphasis small">India's 5 year GDP growth rate is 3.50 %,</div>
+                    <div class="text-uppercase text-medium-emphasis small">whereas it's GDP growth in 2022 is -8%</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- /.col-->
+            <div class="col-sm-6 col-lg-4">
+              <div class="card mb-4" style="--cui-card-cap-bg: #00aced">
+                <div class="card-header position-relative d-flex justify-content-center align-items-center">
+                  <svg class="icon icon-3xl text-white my-4">
+                    <use xlink:href="vendors/@coreui/icons/svg/flag.svg#cif-in"></use>
+                  </svg>
+                  <div class="chart-wrapper position-absolute top-0 start-0 w-100 h-100">
+                    <canvas id="social-box-chart-2" height="90"></canvas>
+                  </div>
+                </div>
+                <div class="card-body row text-center">
+                  <div class="col">
+                    <div class="fs-5 fw-semibold">India's ranking on the index ?</div>
+                    <div class="text-uppercase text-medium-emphasis small"></div>
+                  </div>
+                  <div class="vr"></div>
+                  <div class="col">
+                    <div class="text-uppercase text-medium-emphasis small">India is ranked 131 on the 2022 economic freedom index </div>
+                    <div class="text-uppercase text-medium-emphasis small">out of 184 countries</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- /.col-->
+            <div class="col-sm-6 col-lg-4">
+              <div class="card mb-4" style="--cui-card-cap-bg: #4875b4">
+                <div class="card-header position-relative d-flex justify-content-center align-items-center">
+                  <svg class="icon icon-3xl text-white my-4">
+                    <use xlink:href="vendors/@coreui/icons/svg/flag.svg#cif-in"></use>
+                  </svg>
+                  <div class="chart-wrapper position-absolute top-0 start-0 w-100 h-100">
+                    <canvas id="social-box-chart-3" height="90"></canvas>
+                  </div>
+                </div>
+                <div class="card-body row text-center">
+                  <div class="col">
+                    <div class="fs-5 fw-semibold">India's region(Asia) rank ? </div>
+                    <div class="text-uppercase text-medium-emphasis small"></div>
+                  </div>
+                  <div class="vr"></div>
+                  <div class="col">
+                    <div class="fs-5 fw-semibold"></div>
+                    <div class="text-uppercase text-medium-emphasis small">India is ranked 27th in the asia-pacific region on the 2022 Inex ofeconomic freedom</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            
+            <div class='tableauPlaceholder' id='viz1672314528873' style='position: relative'><noscript><a href='#'><img alt='2022 Economic Freedom Score ' src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;ec&#47;economic_freedom_score_2022&#47;2022EconomicFreedomScore&#47;1_rss.png' style='border: none' /></a></noscript><object class='tableauViz'  style='display:none;'><param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' /> <param name='embed_code_version' value='3' /> <param name='site_root' value='' /><param name='name' value='economic_freedom_score_2022&#47;2022EconomicFreedomScore' /><param name='tabs' value='no' /><param name='toolbar' value='yes' /><param name='static_image' value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;ec&#47;economic_freedom_score_2022&#47;2022EconomicFreedomScore&#47;1.png' /> <param name='animate_transition' value='yes' /><param name='display_static_image' value='yes' /><param name='display_spinner' value='yes' /><param name='display_overlay' value='yes' /><param name='display_count' value='yes' /><param name='language' value='en-US' /><param name='filter' value='publish=yes' /></object></div>                <script type='text/javascript'>                    var divElement = document.getElementById('viz1672314528873');                    var vizElement = divElement.getElementsByTagName('object')[0];                    vizElement.style.width='100%';vizElement.style.height=(divElement.offsetWidth*0.75)+'px';                    var scriptElement = document.createElement('script');                    scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';                    vizElement.parentNode.insertBefore(scriptElement, vizElement);                </script>
+          
+                      
+                     
+                  
+                            <div class="dropdown dropup">
+                              <button class="btn btn-transparent p-0" type="button" data-coreui-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                <!-- <svg class="icon"> -->
+                                  <use xlink:href="vendors/@coreui/icons/svg/free.svg#cil-options"></use>
+                                </svg>
+                              </button>
+                              <div class="dropdown-menu dropdown-menu-end"><a class="dropdown-item" href="#">Info</a><a class="dropdown-item" href="#">Edit</a><a class="dropdown-item text-danger" href="#">Delete</a></div>
+                            </div>
+                          </td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- /.col-->
+          </div>
+          <!-- /.row-->
+        </div>
+      </div>
+      <footer class="footer">
+        <div><a href=></a><a href=></a> © 2022 SmartInternz.</div>
+        <div class="ms-auto">More about&nbsp;<a href="https://smartinternz.com/"> SmartInternz</a></div>
+      </footer>
+    </div>
+    <!-- CoreUI and necessary plugins-->
+    <script src="vendors/@coreui/coreui/js/coreui.bundle.min.js"></script>
+    <script src="vendors/simplebar/js/simplebar.min.js"></script>
+    <!-- Plugins and scripts required by this view-->
+    <script src="vendors/chart.js/js/chart.min.js"></script>
+    <script src="vendors/@coreui/chartjs/js/coreui-chartjs.js"></script>
+    <script src="vendors/@coreui/utils/js/coreui-utils.js"></script>
+    <script src="js/main.js"></script>
+    <script>
+    </script>
+
+  </body>
+</html>
